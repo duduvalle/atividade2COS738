@@ -1,0 +1,11 @@
+2022-05-02 13:15:02,968 Leitura do arquivo de configuracao
+2022-05-02 13:15:02,969 Fim da leitura do arquivo de configuracao
+2022-05-02 13:15:02,969 Executou o procedimento anterior em: 0.000998 segundos
+2022-05-02 13:15:02,969 Leu 3 instrucoes
+2022-05-02 13:15:02,969 Leitura do arquivo LEIA
+2022-05-02 13:15:03,058 Fim da leitura do arquivo LEIA
+2022-05-02 13:15:03,058 Executou o procedimento anterior em: 0.088791 segundos
+2022-05-02 13:15:03,058 Leu 99 consultas
+2022-05-02 13:15:03,058 Escrita dos arquivos CONSULTAS e ESPERADOS
+2022-05-02 13:15:03,062 Fim escrita dos arquivos CONSULTAS e ESPERADOS
+2022-05-02 13:15:03,062 Executou o procedimento anterior em: 0.003960 segundos

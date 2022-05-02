@@ -1,0 +1,1 @@
+Um arquivo MODELO.(DOC ou TXT) com a descrição do formato do modelo na raiz

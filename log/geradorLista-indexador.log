@@ -1,0 +1,27 @@
+2022-05-02 13:25:20,798 Leitura do arquivo de configuracao
+2022-05-02 13:25:20,798 Fim da leitura do arquivo de configuracao
+2022-05-02 13:25:20,798 Executou o procedimento anterior em: 0.000000 segundos
+2022-05-02 13:25:20,798 Leu 7 instrucoes
+2022-05-02 13:25:20,798 Leitura dos arquivos LEIA e criacao das listas invertidas
+2022-05-02 13:25:24,390 Fim da leitura dos arquivos LEIA e criacao das listas invertidas
+2022-05-02 13:25:24,391 Executou o procedimento anterior em: 3.592343 segundos
+2022-05-02 13:25:24,391 Leu 1239 artigos
+2022-05-02 13:25:24,391 Escrita do arquivo ESCREVA
+2022-05-02 13:25:24,461 Fim escrita do arquivo ESCREVA
+2022-05-02 13:25:24,461 Executou o procedimento anterior em: 0.069320 segundos
+2022-05-02 13:25:24,461 INICIA INDEXADOR
+2022-05-02 13:25:24,461 Leitura do arquivo de configuracao
+2022-05-02 13:25:24,462 Fim da leitura do arquivo de configuracao
+2022-05-02 13:25:24,462 Executou o procedimento anterior em: 0.000998 segundos
+2022-05-02 13:25:24,462 Leu 2 instrucoes
+2022-05-02 13:25:24,462 Leitura do arquivo LEIA
+2022-05-02 13:25:24,864 Leitura do arquivo LEIA
+2022-05-02 13:25:24,864 Executou o procedimento anterior em: 0.402222 segundos
+2022-05-02 13:25:24,864 Leu 11508 palavras
+2022-05-02 13:25:24,864 Mas apenas 8955 palavras foram selecionadas
+2022-05-02 13:25:24,864 Criacao da estrutura do modelo
+2022-05-02 13:25:25,450 Fim da criacao da estrutura do modelo
+2022-05-02 13:25:25,450 Executou o procedimento anterior em: 0.586238 segundos
+2022-05-02 13:25:25,450 Escrita do arquivo MODELO
+2022-05-02 13:25:27,028 Fim da Escrita do arquivo MODELO
+2022-05-02 13:25:27,029 Executou o procedimento anterior em: 1.577942 segundos

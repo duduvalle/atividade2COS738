@@ -1,0 +1,15 @@
+2022-05-02 13:22:09,545 Leitura do arquivo de configuracao
+2022-05-02 13:22:09,545 Fim da leitura do arquivo de configuracao
+2022-05-02 13:22:09,546 Executou o procedimento anterior em: 0.000000 segundos
+2022-05-02 13:22:09,546 Leu 3 instrucoes
+2022-05-02 13:22:09,546 Leitura do arquivo do modelo
+2022-05-02 13:22:32,866 Fim da leitura do arquivo do modelo
+2022-05-02 13:22:32,866 Executou o procedimento anterior em: 23.320758 segundos
+2022-05-02 13:22:32,866 Leu 8955 palavras e seus vetores
+2022-05-02 13:22:32,866 Leitura do arquivo das consultas
+2022-05-02 13:22:32,990 Fim da leitura do arquivo das consultas
+2022-05-02 13:22:32,990 Executou o procedimento anterior em: 0.123665 segundos
+2022-05-02 13:22:32,990 Leu 99 consultas
+2022-05-02 13:22:32,991 Escrita do arquivo resultados.csv
+2022-05-02 13:22:48,847 Fim da escrita do arquivo resultados.csv
+2022-05-02 13:22:48,847 Executou o procedimento anterior em: 15.855913 segundos
