@@ -1,1 +1,26 @@
-Um arquivo README.MD na raiz com qualquer instrução adicional para uso do código entregue
+# Atividade 3 de COS738
+Eduardo Vieira Marques Pereira do Valle
+evalle@cos.ufrj.br 09/05/2022
+
+## Bibliotecas de python utilizadas:
+
+- word_tokenize de nltk.tokenize
+- RawConfigParser de configparser
+- ConfigParser de configparser
+- OrderedDict de collections 
+- distance de scipy.spatial
+- xml.dom.minidom
+- numpy
+- unidecode
+- logging
+- math
+- time
+- ast
+- csv
+
+## Execução
+
+O código foi implementado seguindo as instruções estabelecidas em InstrucoesAtividade3.pdf. Para executar a atividade basta rodar os arquivos a seguir na ordem que são apresentados: processador.py, geradorLista-indexador.py e buscador.py.
+
+Para diminuir a quantidade de resultados da busca, são separados apenas os documentos que tiveram o cosseno entre seu vetor e o vetor da consulta maiores que 0,9.
+
