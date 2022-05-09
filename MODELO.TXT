@@ -1,1 +1,1 @@
-Um arquivo MODELO.(DOC ou TXT) com a descrição do formato do modelo na raiz
+O formato do modelo, resultado do indexador, é de um dicionário python, onde as chaves seriam as palavras, com mais de duas letras e apenas formada por letras, encontradas nos documentos e o valor guardado de cada chave seria o vetor peso da palavra em todos os documentos. Para armazenar esse dicionário, cria o arquivo csv "modelo.csv", separado os elementos por ";" onde cada linha representa o par chave e valor do dicionário(primeira coluna chave e segunda coluna valor).
