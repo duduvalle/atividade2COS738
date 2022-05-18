@@ -1,4 +1,5 @@
 from nltk.tokenize import word_tokenize
+from nltk.stem import PorterStemmer
 from configparser import ConfigParser
 import numpy as np
 from scipy.spatial import distance
@@ -7,6 +8,7 @@ import time
 import ast
 import csv
 
+ps = PorterStemmer()
 logging.basicConfig(filename="log/buscador.log",format='%(asctime)s %(message)s',filemode='w')
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG) #logger.error("Did you try to divide by zero")
@@ -19,6 +21,7 @@ config.read("config/BUSCA.CFG")
 arquivoModelo = config["arquivos"]["MODELO"]
 arquivoConsultas = config["arquivos"]["CONSULTAS"]
 arquivoResultado = config["arquivos"]["RESULTADOS"]
+usaStemmer = config["arquivos"]["USASTEMMER"]
 i = 3
 
 end = time.time()
@@ -57,7 +60,12 @@ with open(arquivoConsultas) as csv_file2:
     next(csv_reader)
     for row in csv_reader:
         i += 1
-        dicionarioConsulta[int(row[0])] = word_tokenize(row[1])
+        palavras = word_tokenize(row[1])
+        if (usaStemmer == "STEMMER"):
+            words = [ps.stem(word) for word in palavras]
+        else:
+            words = palavras
+        dicionarioConsulta[int(row[0])] = words
         aux = np.zeros(len(matrixVetores[0]))
         for word in dicionarioConsulta[int(row[0])]:
             if word in termos:
@@ -87,7 +95,10 @@ for key in dicionarioConsulta:
     daux = [key, tuplasConsulta]
     data.append(daux)
 
-with open(arquivoResultado, 'w', encoding='UTF8', newline='') as f:
+index = arquivoResultado.find('.csv')
+arquivoResultadoAlterado = arquivoResultado[:index-3] + "-" + usaStemmer + arquivoResultado[index-3:]
+
+with open(arquivoResultadoAlterado, 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f, delimiter=';')
     writer.writerows(data)
 

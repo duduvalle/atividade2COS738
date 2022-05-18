@@ -8,6 +8,8 @@ evalle@cos.ufrj.br 09/05/2022
 - RawConfigParser de configparser
 - ConfigParser de configparser
 - OrderedDict de collections 
+- matplotlib.pyplot 
+- matplotlib.backends.backend_pdf
 - distance de scipy.spatial
 - xml.dom.minidom
 - numpy
@@ -20,7 +22,7 @@ evalle@cos.ufrj.br 09/05/2022
 
 ## Execução
 
-O código foi implementado seguindo as instruções estabelecidas em InstrucoesAtividade3.pdf. Para executar a atividade basta rodar os arquivos a seguir na ordem que são apresentados: processador.py, geradorLista-indexador.py e buscador.py.
+O código foi implementado seguindo as instruções estabelecidas em InstrucoesAtividade4.pdf. Para executar a atividade basta rodar os arquivos a seguir na ordem que são apresentados: processador.py, geradorLista-indexador.py, buscador.py e avaliador.py.
 
 Para diminuir a quantidade de resultados da busca, são separados apenas os documentos que tiveram o cosseno entre seu vetor e o vetor da consulta maiores que 0,9.
 

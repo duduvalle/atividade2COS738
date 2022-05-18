@@ -2,6 +2,7 @@ from configparser import RawConfigParser
 from configparser import ConfigParser
 from collections import OrderedDict
 from nltk.tokenize import word_tokenize
+from nltk.stem import PorterStemmer
 import xml.dom.minidom
 import unidecode
 import logging
@@ -9,7 +10,8 @@ import time
 import csv
 import ast
 import math
- 
+
+ps = PorterStemmer()
 logging.basicConfig(filename="log/geradorLista-indexador.log",format='%(asctime)s %(message)s',filemode='w')
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -28,6 +30,7 @@ config = RawConfigParser(dict_type=MultiOrderedDict, strict=False)
 config.read("config/GLI.CFG")
 arquivosLeitura = config["arquivos"]["LEIA"]
 arquivoListas = config["arquivos"]["ESCREVA"]
+usaStemmer = config["arquivos"]["USASTEMMER"]
 i = 7
 
 end = time.time()
@@ -58,7 +61,11 @@ for arquivoLeitura in arquivosLeitura:
                 texto = artigo.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue
         texto = unidecode.unidecode(texto)
         texto = texto.upper()
-        words = word_tokenize(texto)
+        palavras = word_tokenize(texto)
+        if(usaStemmer[0] == "STEMMER"):
+            words = [ps.stem(word) for word in palavras]
+        else:
+            words = palavras
         palavrasDocumento.append(len(words))
         for word in words: 
             if word in dicionarioListaInvertida:
