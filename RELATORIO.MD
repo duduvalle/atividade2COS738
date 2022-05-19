@@ -11,4 +11,4 @@ evalle@cos.ufrj.br 09/05/2022
 
 ## Resultados em formato de diagrama
 
-Estão situados nos arquivos pdf na pasta avalia.
+Estão situados nos arquivos pdf na pasta avalia. O arquivo histograma-R-precision-15.pdf representa os histogramas de R-Precision de todas as 99 consultas, em que se subtrai o R-precision do resultado sem stemmer de Porter com o que utiliza o stemmer de Porter(RPstemmer - RPnostemmer).
